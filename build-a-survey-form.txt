@@ -1,0 +1,340 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Experience Survey</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <h1 id="title">Website User Experience Survey</h1>
+    <p id="description">Please take this short 5-minute survey to provide feedback on our website.</p>
+
+    <form id="survey-form" class="form-master">
+        <fieldset>
+            <legend>Demographic Information:</legend>
+            <div class="form-fields">
+                <label id="name-label" for="name-label">Full Name:
+                    <input type="text" id="name" name="name" required placeholder="Enter your Full Name" />
+                </label>
+            </div>
+            <div class="form-fields">
+                <label id="email-label" for="email-label">E-Mail:
+                    <input type="email" id="email" name="email" required placeholder="Enter your Email" />
+                </label>
+            </div>
+            <div class="form-fields">
+                <label id="number-label" for="number-label">Enter your age (optional):
+                    <input type="number" id="number" name="age" min="18" max="110" placeholder="Age" />
+                </label>
+            </div>
+            <div class="form-fields">
+                <label for="gender-label">Gender:
+                    <select id="dropdown" name="gender" required>
+                        <option value="">(Select One)</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="nonbi">Non-Binary</option>
+                        <option value="preferno">Prefer not to Disclose</option>
+                    </select>
+                </label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Shopping Preferences:</legend>
+            <div class="form-fields">
+                <p>Favorite watch brands we carry (Check All Favorites): </p>
+                <div class="checkbox-group-container"><div>
+                    <input name="watch-brand" type="checkbox" class="watch-checkbox" value="cartier" id="cartier">
+                    <label for="cartier">Cartier</label>
+                </div>
+                <div>
+                    <input name="watch-brand" type="checkbox" class="watch-checkbox" value="rolex" id="rolex">
+                    <label for="rolex">Rolex</label>
+                </div>
+                <div>
+                    <input name="watch-brand" type="checkbox" class="watch-checkbox" value="patek" id="patek">
+                    <label for="patek">Patek Philippe</label>
+                </div>
+                <div>
+                    <input name="watch-brand" type="checkbox" class="watch-checkbox" value="tudor" id="tudor">
+                    <label for="tudor">Tudor</label>
+                </div>
+                <div>
+                    <input name="watch-brand" type="checkbox" class="watch-checkbox" value="iwc" id="iwc">
+                    <label for="iwc">I.W.C. Schaffhausen</label>
+                </div>
+                <div>
+                    <input name="watch-brand" type="checkbox" class="watch-checkbox" value="jlc" id="jlc">
+                    <label for="jlc">Jaeger Le-Coultre</label>
+                </div>
+                <div>
+                    <input name="watch-brand" type="checkbox" class="watch-checkbox" value="gseiko" id="gseiko">
+                    <label for="gseiko">Grand Seiko</label>
+                </div>
+            </div></div>
+
+            <div class="form-fields">
+                <p>Favorite jewelry brands we carry (Check All Favorites): </p>
+                <div class="checkbox-group-container"><div>
+                    <input name="jewelry-brand" type="checkbox" class="jewelry-checkbox" value="pomellato" id="pomellato">
+                    <label for="pomellato">Pomellato</label>
+                </div>
+                <div>
+                    <input name="jewelry-brand" type="checkbox" class="jewelry-checkbox" value="anitako" id="anitako">
+                    <label for="anitako">Anita Ko</label>
+                </div>
+                <div>
+                    <input name="jewelry-brand" type="checkbox" class="jewelry-checkbox" value="jtrau" id="jtrau">
+                    <label for="jtrau">Jade Trau</label>
+                </div>
+                <div>
+                    <input name="jewelry-brand" type="checkbox" class="jewelry-checkbox" value="sepkus" id="sepkus">
+                    <label for="sepkus">Alex Sepkus</label>
+                </div>
+                <div>
+                    <input name="jewelry-brand" type="checkbox" class="jewelry-checkbox" value="bicego" id="bicego">
+                    <label for="bicego">Marco Bicego</label>
+                </div>
+                <div>
+                    <input name="jewelry-brand" type="checkbox" class="jewelry-checkbox" value="morelli" id="morelli">
+                    <label for="morelli">Paul Morelli</label>
+                </div>
+                <div>
+                    <input name="jewelry-brand" type="checkbox" class="jewelry-checkbox" value="gumuchian" id="gumuchian">
+                    <label for="gumuchian">Gumuchian</label>
+                </div>
+                <div>
+                    <input name="jewelry-brand" type="checkbox" class="jewelry-checkbox" value="tjb" id="tjb">
+                    <label for="tjb">Tiny Jewel Box</label>
+                </div>
+                <div>
+                    <input name="jewelry-brand" type="checkbox" class="jewelry-checkbox" value="ippolita" id="ippolita">
+                    <label for="ippolita">Ippolita</label>
+                </div>
+            </div></div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Browse Feedback:</legend>
+            <div class="form-fields">
+                <p>What device are you using to browse?</p>
+                <label for="device-computer">
+                    <input name="device" value="computer" type="radio" class="input-radio" id="device-computer" checked> Computer
+                </label>
+                <label for="device-iphone">
+                    <input name="device" value="iPhone" type="radio" class="input-radio" id="device-iphone"> iPhone
+                </label>
+                <label for="device-android">
+                    <input name="device" value="android" type="radio" class="input-radio" id="device-android"> Android
+                </label>
+                <label for="device-tablet">
+                    <input name="device" value="tablet" type="radio" class="input-radio" id="device-tablet"> Tablet
+                </label>
+            </div>
+
+            <div class="form-fields">
+                <p>How did you find our website?</p>
+                <label for="source-search">
+                    <input name="source" value="search-engine" type="radio" class="input-radio" id="source-search"> Search Engine
+                </label>
+                <label for="source-social">
+                    <input name="source" value="social-media" type="radio" class="input-radio" id="source-social"> Social Media
+                </label>
+                <label for="source-wordofmouth">
+                    <input name="source" value="word-of-mouth" type="radio" class="input-radio" id="source-wordofmouth"> Word of Mouth
+                </label>
+                <label for="source-advertisement">
+                    <input name="source" value="advertisement" type="radio" class="input-radio" id="source-advertisement"> Advertisement
+                </label>
+                <label for="source-other">
+                    <input name="source" value="other" type="radio" class="input-radio" id="source-other"> Other
+                </label>
+            </div>
+
+            <div class="form-fields">
+                <label for="comments">Any additional comments or suggestions?</label>
+                <textarea id="comments" name="comments" rows="5" placeholder="Enter your comments here..."></textarea>
+            </div>
+        </fieldset>
+
+        <button type="submit" id="submit" class="submit-button">Submit Survey</button>
+    </form>
+
+</body>
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+body {
+  background-color: #67010d;
+  color: #ffffff;
+}
+h1,p {
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px;
+  font-family: serif;
+  }
+
+  /* Styles for Demographic Information Fieldset */
+fieldset {
+    margin-bottom: 20px; /* Adds space below each fieldset */
+    padding: 20px; /* Adds internal padding */
+    border: 1px solid #ccc; /* Adds a border for visual separation */
+    border-radius: 8px; /* Slightly rounded corners */
+}
+
+/* Target the specific fieldset for Demographic Information if needed,
+   but these general fieldset styles are usually good. */
+/* If you wanted to be super specific, you could add an ID to the fieldset
+   like <fieldset id="demographic-info"> and then target #demographic-info */
+
+.form-fields {
+    margin-bottom: 15px; /* Adds space between each form field group */
+    width: 100%; /* Make the container div take full width */
+}
+
+.form-fields label {
+    display: block; /* Make labels take up full width and stack */
+    margin-bottom: 5px; /* Space between label and input */
+    font-weight: bold; /* Make labels stand out */
+}
+
+.form-fields input[type="text"],
+.form-fields input[type="email"],
+.form-fields input[type="number"],
+.form-fields select {
+    width: 100%; /* Make input and select elements fill their parent's width */
+    padding: 10px; /* Add some padding inside the input fields */
+    border: 1px solid #ddd; /* Subtle border */
+    border-radius: 4px; /* Slightly rounded corners for inputs */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    margin-top: 5px; /* Space above input fields */
+}
+
+/* Specific styling for radio buttons and checkboxes to maintain their natural layout */
+.form-fields input[type="radio"],
+.form-fields input[type="checkbox"] {
+    width: auto; /* Reset width for radios/checkboxes as they shouldn't be full width */
+    margin-right: 8px; /* Space between the input and its label text */
+}
+
+/* Adjust labels for radio/checkboxes if they are inside their own div, to keep them inline */
+.form-fields div label {
+    display: inline-block; /* Ensure labels for radios/checkboxes stay inline with their input */
+    font-weight: normal; /* Reset font weight for these specific labels */
+    margin-bottom: 0;
+}
+
+/* Column Layout for Checkbox Options */
+.checkbox-group-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    justify-content: flex-start; /* Aligns items to the start of the container */
+    gap: 15px; /* Space between flex items (checkbox options) */
+    margin-top: 10px; /* Space above the group of checkboxes */
+}
+
+.checkbox-group-container > div { /* Targets the individual div around each checkbox and label */
+    flex: 0 0 calc(33.333% - 10px); /* Basis for 3 columns with gap */
+    /* calc(100% / 3 - (gap * 2 / 3)) for 3 columns and 2 gaps.
+       For 15px gap, (15 * 2 / 3) = 10px.
+       Adjust 10px if you change the gap value. */
+    box-sizing: border-box; /* Ensures padding and border are included in the width */
+    padding: 8px 10px; /* Internal padding for each checkbox item */
+    border: 1px solid #eee; /* Subtle border for each item */
+    border-radius: 5px; /* Rounded corners for the item container */
+
+    display: flex; /* Make the inner div a flex container */
+    align-items: center; /* Vertically align checkbox and label */
+    cursor: pointer; /* Indicate it's clickable */
+    transition: box-shadow 0.3s ease-in-out, border-color 0.3s ease-in-out; /* Smooth transition for hover effects */
+}
+
+/* Specific styling for radio buttons and checkboxes themselves within these containers */
+.checkbox-group-container input[type="checkbox"] {
+    width: auto; /* Override previous full-width input styles */
+    margin-right: 8px; /* Space between checkbox and its label */
+    margin-top: 0; /* Remove top margin */
+    flex-shrink: 0; /* Prevent checkbox from shrinking */
+}
+
+.checkbox-group-container label {
+    font-weight: normal; /* Override bold label style */
+    margin-bottom: 0; /* Remove bottom margin */
+    flex-grow: 1; /* Allow label to take available space */
+    cursor: pointer; /* Indicate it's clickable */
+}
+
+
+/* Glowing Outline on Hover */
+.checkbox-group-container > div:hover {
+    border-color: #88eeff; /* Change border color on hover */
+    box-shadow: 0 0 10px rgba(136, 238, 255, 0.7); /* White/light blue glow effect */
+}
+
+/* Optional: Style for when a checkbox is checked */
+.checkbox-group-container input[type="checkbox"]:checked + label {
+    color: #007bff; /* Example: change text color when checked */
+    font-weight: bold;
+}
+.checkbox-group-container input[type="checkbox"]:checked {
+    accent-color: #007bff; /* Changes the color of the checkbox itself (modern browsers) */
+}
+/* Style for the comments text area container */
+.form-fields textarea {
+    width: 100%; /* Make the textarea take up the full width of its parent */
+    padding: 10px; /* Add some internal padding for better user experience */
+    border: 1px solid #ddd; /* Subtle border */
+    border-radius: 4px; /* Slightly rounded corners */
+    box-sizing: border-box; /* Crucial: includes padding and border in the 100% width */
+    margin-top: 10px; /* Add space above the textarea */
+    min-height: 100px; /* Set a minimum height for the text area */
+    resize: vertical; /* Allow users to only resize vertically */
+}
+
+/* Style for the label of the comments text area */
+.form-fields label[for="comments"] {
+    display: block; /* Ensure the label is on its own line */
+    margin-bottom: 5px; /* Space between label and textarea */
+    font-weight: bold; /* Make the label stand out */
+}
+
+/* Ensure the parent .form-fields div helps with centering/layout */
+.form-fields {
+    /* Existing styles for .form-fields should already include width: 100%
+       and margin-bottom. If not, add them to your existing .form-fields rule: */
+    width: 100%; /* Ensure the container is full width */
+    margin-bottom: 15px; /* Consistent spacing between form field groups */
+    /* text-align: center; could be used if you wanted inline content centered,
+       but for a block element like textarea, width: 100% and proper margins
+       are what makes it "fill" and appear centered. */
+}
+
+/* Styling for the Submit Button */
+.submit-button {
+    display: block; /* Make the button a block-level element */
+    width: 200px; /* Give the button a defined width */
+    margin: 30px auto 20px auto; /* Center horizontally with auto margins, add vertical spacing */
+    padding: 15px 25px; /* Internal padding */
+    background-color: #007bff; /* Example background color (blue) */
+    color: white; /* Text color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1.1em; /* Slightly larger text */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.submit-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+** end of styles.css **
+
